@@ -1,0 +1,155 @@
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+    background-color: #f5f7fa;
+    padding: 20px;
+    }
+
+    /* 容器 */
+    .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+    /* 标题栏 */
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+    }
+
+    .title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    }
+
+    /* 搜索 + 添加按钮 */
+    .tool-bar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    }
+
+    .search-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    width: 240px;
+    transition: border 0.3s;
+    }
+
+    .search-input:focus {
+    border-color: #409eff;
+    }
+
+    .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+    }
+
+    .btn-primary {
+    background-color: #409eff;
+    color: white;
+    }
+
+    .btn-primary:hover {
+    background-color: #66b1ff;
+    }
+
+    /* 用户列表网格 */
+    .user-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    }
+
+    /* 用户卡片 */
+    .user-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+    }
+
+    .user-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #409eff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 12px;
+    }
+
+    .user-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+    }
+
+    .user-info {
+    font-size: 14px;
+    color: #666;
+    margin: 4px 0;
+    }
+
+    /* 操作按钮 */
+    .card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    }
+
+    .btn-edit {
+    background-color: #67c23a;
+    color: white;
+    flex: 1;
+    }
+
+    .btn-edit:hover {
+    background-color: #85ce61;
+    }
+
+    .btn-del {
+    background-color: #f56c6c;
+    color: white;
+    flex: 1;
+    }
+
+    .btn-del:hover {
+    background-color: #f78989;
+    }
+
+    /* 空状态 */
+    .empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+    grid-column: 1 / -1;
+    }

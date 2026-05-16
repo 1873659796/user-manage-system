@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用户管理列表</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 顶部标题与工具栏 -->
+      <div class="header">
+        <div class="title">用户管理列表</div>
+        <div class="tool-bar">
+          <button class="btn btn-primary" id="addUserBtn">+ 添加用户</button>
+        </div>
+      </div>
+      <!-- 用户列表 -->
+      <div class="user-list" id="userList">
+        <!-- JS 动态渲染 -->
+      </div>
+    </div>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
